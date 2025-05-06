@@ -712,20 +712,4 @@ bot.launch()
 process.once("SIGINT", () => bot.stop("SIGINT"));
 process.once("SIGTERM", () => bot.stop("SIGTERM"));
 
-// I am never of the opinion that any part of the project Architecture is Easy.
-// I think that all have their own challenges.
-// but i do believe that most are more complex , stressfull and frustrating than others.
-// Brand Designing is not easy.
-// UI/UX is not easy.
-// Backend is not easy.
-// Frontend is not easy.
-// Database is not easy.
-// Testing is not easy.
-// Deployment is not easy.
-// Security is not easy.
-// Documentation is not easy.
-// None is more easier than the rest.
-
-// The paradox about it is that, the more you know about a particular part of the project, the more you realize how complex it is.
-// I think the only part of the project that is easy is the part that you have not done before.
-// But even that is not easy, that you will learn when you start doing it.
+ 

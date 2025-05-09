@@ -1,7 +1,11 @@
+require('dotenv').config();
+
 const { Telegraf, Markup, Scenes, session } = require("telegraf");
 const { BaseScene, Stage } = Scenes;
 const axios = require("axios");
 const crypto = require("crypto");
+const connectDB = require('./db');
+const User = require('./models/user');
 
 // Database mock (replace with actual DB in production)
 const userDB = {
@@ -65,10 +69,19 @@ const getExchangeRate = (from, to) => {
    return 0;
 };
 
+// Connect to MongoDB
+connectDB();
+
 // Initialize bot
-const token =
-   process.env.BOT_TOKEN || "7855516337:AAHFU-LwIwy32WUZqnatreAo6E2JSOP2hS8";
+const token = process.env.BOT_TOKEN;
+if (!token) {
+  console.error('BOT_TOKEN is not defined in environment variables');
+  process.exit(1);
+}
+
 const bot = new Telegraf(token);
+
+
 
 // Welcome scene
 const welcomeScene = new BaseScene("welcome");

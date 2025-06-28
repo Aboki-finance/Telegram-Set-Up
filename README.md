@@ -1,10 +1,14 @@
-# ABOKI 
- 
-A Telegram bot for buying and selling cryptocurrency. 
- 
-## Setup 
- 
-1. Clone this repository 
-2. Run npm install 
-3. Configure your .env file 
-4. Run npm start 
+# Aboki Crypto Bot
+
+A production-ready, modular Telegram bot for cryptocurrency trading built with Node.js and Telegraf.
+
+## Features
+
+- 🏦 Wallet generation and management
+- 💰 Buy/Sell cryptocurrency with fiat
+- 📊 Transaction history tracking  
+- 🔐 KYC verification system
+- 📱 Bank account integration
+- 🚀 Modular architecture
+- 📝 Comprehensive logging
+- 🔒 Rate limiting and error handling
